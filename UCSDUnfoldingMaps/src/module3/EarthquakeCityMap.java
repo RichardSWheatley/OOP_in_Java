@@ -77,11 +77,11 @@ public class EarthquakeCityMap extends PApplet {
 	    // These print statements show you (1) all of the relevant properties 
 	    // in the features, and (2) how to get one property and use it
 	    if (earthquakes.size() > 0) {
-		    for(PointFeature pFeature : earthquakes) {
-		    	SimplePointMarker myMarker = createMarker(pFeature);
-		    	markers.add(myMarker);
-		    	map.addMarkers(markers);
-		    }
+		for(PointFeature pFeature : earthquakes) {
+		   SimplePointMarker myMarker = createMarker(pFeature);
+		   markers.add(myMarker);
+		}
+	    	map.addMarkers(markers);
 	    }
 	}
 		
